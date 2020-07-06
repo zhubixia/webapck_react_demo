@@ -1,6 +1,3 @@
-const files = require.context('.', false, /\.js$/)
+import module from '@/utils/module'
 
-
-files.keys().forEach((item) => {
-  console.log(item)
-})
+console.log(module(), 'module')
